@@ -1,0 +1,431 @@
+name: bathCabinetName
+variables:
+  - name: mainCabinetLen
+    type: number
+    value: 0.87
+  - name: bathCabinetColorNum
+    type: number
+    value: 0
+  - name: bathCabinetName
+    type: string
+    value:
+      - conditions:
+          - bathCabinetColorNum == 0
+        value: '"浴室柜SGCD900.W7仿古白"'
+      - conditions:
+          - bathCabinetColorNum == 1
+        value: '"浴室柜SGCD900.R3经典棕"'
+  - name: mainCabinetWidth
+    type: number
+    value: 0.585
+  - name: mainCabinetHeight
+    type: number
+    value: 0.8
+  - name: mainCabinetGround
+    type: number
+    value: 0
+  - name: basinCountertopLen
+    type: number
+    value: 0.9
+  - name: basinCountertopWidth
+    type: number
+    value: 0.6
+  - name: basinCountertopHeight
+    type: number
+    value: 0.03
+  - name: mirrorCabinetLen
+    type: number
+    value: 0.73
+  - name: mirrorCabinetWidth
+    type: number
+    value: 0.045
+  - name: mirrorCabinetHeight
+    type: number
+    value: 0.9
+  - name: totalLen
+    type: number
+    value: basinCountertopLen
+  - name: totalWidth
+    type: number
+    value: 0.6
+  - name: totalHeight
+    type: number
+    value: 2.099
+  - name: bathroomID
+    type: uuid
+    value:
+      - conditions:
+          - bathCabinetColorNum == 0
+        value: '"4398f51e-bba0-43d0-8294-8121b3790715"'
+      - conditions:
+          - bathCabinetColorNum == 1
+        value: '"488ab59a-d263-44d0-97e4-a160a3ad6bbe"'
+  - name: previewImg
+    type: string
+    value: >-
+      "https://oss-cn-shanghai.aliyuncs.com/j3ddev/contents/d6f7fcf9-ddef-4121-b7c5-f6687109a968/thumbnail_160.jpg"
+  - name: hydrovalveID
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hyA91160C
+    type: uuid
+    value: '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+  - name: hyST1023CW
+    type: uuid
+    value: '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+  - name: hyF1A1010C
+    type: uuid
+    value: '"64042589-1dad-133c-822c-7a965c1ea420"'
+  - name: hyK16027TB4CP
+    type: uuid
+    value: '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+  - name: hyF1172217CP
+    type: uuid
+    value: '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+  - name: hy71160007
+    type: uuid
+    value: '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+  - name: hyAMP1115
+    type: uuid
+    value: '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+  - name: hyK37327T4CP
+    type: uuid
+    value: '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+  - name: hyF16061C2
+    type: uuid
+    value: '"626a8e6f-70bf-4a88-9637-de696dada597"'
+  - name: hyK8670T4MCP
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hy31080007
+    type: uuid
+    value: '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+  - name: hyK97347T4CP
+    type: uuid
+    value: '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+  - name: hy31083007
+    type: uuid
+    value: '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+  - name: hyA91160C
+    type: uuid
+    value: '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+  - name: hyST1023CW
+    type: uuid
+    value: '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+  - name: hyF1A1010C
+    type: uuid
+    value: '"64042589-1dad-133c-822c-7a965c1ea420"'
+  - name: hyK16027TB4CP
+    type: uuid
+    value: '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+  - name: hyF1172217CP
+    type: uuid
+    value: '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+  - name: hy71160007
+    type: uuid
+    value: '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+  - name: hyAMP1115
+    type: uuid
+    value: '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+  - name: hyK37327T4CP
+    type: uuid
+    value: '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+  - name: hyF16061C2
+    type: uuid
+    value: '"626a8e6f-70bf-4a88-9637-de696dada597"'
+  - name: hyK8670T4MCP
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hy31080007
+    type: uuid
+    value: '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+  - name: hyK97347T4CP
+    type: uuid
+    value: '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+  - name: hy31083007
+    type: uuid
+    value: '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+  - name: hydrovalveXlen
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyA91160C
+        value: 0.057
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.0416
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.048
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.048
+      - conditions:
+          - hydrovalveID == hyAMP1115
+        value: 0.045
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.0576
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.098
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.175
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.0534
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.406
+  - name: hydrovalveYlen
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyA91160C
+        value: 0.17
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.147
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.147
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.124
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.17
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.144
+      - conditions:
+          - hydrovalveID == hyAMP1115
+        value: 0.185
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.157
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.165
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.0866
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.149
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.203
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.17
+  - name: hydrovalveZlen
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyA91160C
+        value: 0.2
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.174
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.174
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.107
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.24
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.122
+      - conditions:
+          - hydrovalveID == hyAMP1115
+        value: 0.201
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.17
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.242
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.111
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.174
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.204
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.201
+  - name: hydrovalveWall
+    type: number
+    value: 0.04
+  - name: hydrovalveX
+    type: number
+    value: 0
+  - name: hydrovalveY
+    type: number
+    value: 0
+  - name: hydrovalveZ
+    type: number
+    value: 0.08
+popup:
+  - widget: group
+    title: 主柜尺寸
+    items:
+      - title: 长度
+        type: length
+        value: mainCabinetLen
+        inputable: false
+      - title: 宽度
+        type: length
+        value: mainCabinetWidth
+        inputable: false
+      - title: 高度
+        type: length
+        value: mainCabinetHeight
+        inputable: false
+      - title: 离地
+        type: length
+        value: mainCabinetGround
+      - title: 角度
+        type: angle
+        value: rotation.z
+        inputable: false
+  - widget: group
+    title: '"柜盆/台面尺寸"'
+    items:
+      - title: 长度
+        type: length
+        value: basinCountertopLen
+        inputable: false
+      - title: 宽度
+        type: length
+        value: basinCountertopWidth
+        inputable: false
+      - title: 高度
+        type: length
+        value: basinCountertopHeight
+        inputable: false
+  - widget: group
+    title: 镜柜尺寸
+    items:
+      - title: 长度
+        type: length
+        value: mirrorCabinetLen
+        inputable: false
+      - title: 宽度
+        type: length
+        value: mirrorCabinetWidth
+        inputable: false
+      - title: 高度
+        type: length
+        value: mirrorCabinetHeight
+        inputable: false
+  - widget: radio
+    title: 浴室柜可选颜色
+    type: number
+    value: bathCabinetColorNum
+    options:
+      - label: 仿古白
+        value: 0
+      - label: 经典棕
+        value: 1
+  - type: component
+    title: 面盆龙头规格
+    value: hydrovalveID
+    options:
+      - '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+      - '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+      - '"64042589-1dad-133c-822c-7a965c1ea420"'
+      - '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+      - '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+      - '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+      - '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+      - '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+      - '"626a8e6f-70bf-4a88-9637-de696dada597"'
+      - '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+      - '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+      - '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+      - '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+components:
+  - id: bathroomID
+    position:
+      - 0
+      - 0
+      - totalHeight / 2 + mainCabinetGround
+    rotation:
+      - 0
+      - 0
+      - 0
+    length: totalLen
+    width: totalWidth
+    height: totalHeight
+  - id: hydrovalveID
+    position:
+      - '-hydrovalveX'
+      - totalWidth / 2 - hydrovalveWall - hydrovalveYlen / 2 + hydrovalveY
+      - mainCabinetGround + mainCabinetHeight + hydrovalveZlen / 2 + hydrovalveZ
+    rotation:
+      - 0
+      - 0
+      - 0
+item2Ds:
+  - type: polyline
+    color: '#0080FF'
+    fill: '#616130'
+    path:
+      - - totalLen/2
+        - totalWidth/2
+      - - totalLen/2
+        - '-totalWidth/2'
+      - - '-totalLen/2'
+        - '-totalWidth/2'
+      - - '-totalLen/2'
+        - totalWidth/2
+snappings:
+  active:
+    - type: corner
+      point:
+        - '-totalLen/2'
+        - totalWidth / 2
+        - 0
+      direction:
+        - -1
+        - 1
+        - 0
+      behaviors: null
+    - type: corner
+      point:
+        - totalLen/2
+        - totalWidth / 2
+        - 0
+      direction:
+        - 1
+        - 1
+        - 0
+      behaviors: null
+    - type: wall
+      point:
+        - 0
+        - totalWidth/2
+        - 0
+      direction:
+        - 0
+        - 1
+        - 0
+      behaviors: null

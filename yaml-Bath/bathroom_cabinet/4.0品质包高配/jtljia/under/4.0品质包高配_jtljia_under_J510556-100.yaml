@@ -1,0 +1,1084 @@
+name: bathCabinetName
+variables:
+  - name: mainCabinetLen
+    type: number
+    value: 1.08
+  - name: bathCabinetColorNum
+    type: number
+    value: 0
+  - name: bathCabinetName
+    type: string
+    value:
+      - conditions:
+          - mainCabinetLen == 1.08
+        value: '"浴室柜J510556-100"'
+      - conditions:
+          - mainCabinetLen == 1.18
+        value: '"浴室柜J510556-120"'
+  - name: mainCabinetWidth
+    type: number
+    value: 0.585
+  - name: mainCabinetHeight
+    type: number
+    value: 0.5
+  - name: mainCabinetGround
+    type: number
+    value: 0
+  - name: basinCountertopLen
+    type: string
+    value:
+      - conditions:
+          - mainCabinetLen == 1.08
+        value: '"565/1000"'
+      - conditions:
+          - mainCabinetLen == 1.18
+        value: '"565/1200"'
+  - name: basinCountertopWidth
+    type: string
+    value: '"435/600"'
+  - name: basinCountertopWidthB
+    type: number
+    value: 0.6
+  - name: basinCountertopHeight
+    type: string
+    value: '"200/15"'
+  - name: mirrorCabinetLen
+    type: number
+    value: 0.93
+  - name: mirrorCabinetWidth
+    type: number
+    value: 0.13
+  - name: mirrorCabinetHeight
+    type: number
+    value: 0.69
+  - name: totalLen
+    type: number
+    value:
+      - conditions:
+          - mainCabinetLen == 1.08
+        value: 1
+      - conditions:
+          - mainCabinetLen == 1.18
+        value: 1.2
+  - name: totalWidth
+    type: number
+    value: 0.608
+  - name: totalHeight
+    type: number
+    value: 1.817
+  - name: bathroomID
+    type: uuid
+    value:
+      - conditions:
+          - mainCabinetLen == 1.08
+        value: '"7cdbc778-5e62-416f-b9dd-7bec097699fc"'
+      - conditions:
+          - mainCabinetLen == 1.18
+        value: '"b6d92f85-435c-44bc-8236-f649be6f20b9"'
+  - name: previewImg
+    type: string
+    value: >-
+      "https://oss-cn-shanghai.aliyuncs.com/j3ddev/contents/d6f7fcf9-ddef-4121-b7c5-f6687109a968/thumbnail_160.jpg"
+  - name: hydrovalveID
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hyA91160C
+    type: uuid
+    value: '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+  - name: hyST1023CW
+    type: uuid
+    value: '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+  - name: hyF1A1010C
+    type: uuid
+    value: '"64042589-1dad-133c-822c-7a965c1ea420"'
+  - name: hyK16027TB4CP
+    type: uuid
+    value: '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+  - name: hyF1172217CP
+    type: uuid
+    value: '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+  - name: hy71160007
+    type: uuid
+    value: '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+  - name: hyAMP1115
+    type: uuid
+    value: '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+  - name: hyK37327T4CP
+    type: uuid
+    value: '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+  - name: hyF16061C2
+    type: uuid
+    value: '"626a8e6f-70bf-4a88-9637-de696dada597"'
+  - name: hyK8670T4MCP
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hy31080007
+    type: uuid
+    value: '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+  - name: hyK97347T4CP
+    type: uuid
+    value: '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+  - name: hy31083007
+    type: uuid
+    value: '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+  - name: hyA91160C
+    type: uuid
+    value: '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+  - name: hyST1023CW
+    type: uuid
+    value: '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+  - name: hyF1A1010C
+    type: uuid
+    value: '"64042589-1dad-133c-822c-7a965c1ea420"'
+  - name: hyK16027TB4CP
+    type: uuid
+    value: '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+  - name: hyF1172217CP
+    type: uuid
+    value: '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+  - name: hy71160007
+    type: uuid
+    value: '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+  - name: hyAMP1115
+    type: uuid
+    value: '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+  - name: hyK37327T4CP
+    type: uuid
+    value: '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+  - name: hyF16061C2
+    type: uuid
+    value: '"626a8e6f-70bf-4a88-9637-de696dada597"'
+  - name: hyK8670T4MCP
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hy31080007
+    type: uuid
+    value: '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+  - name: hyK97347T4CP
+    type: uuid
+    value: '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+  - name: hy31083007
+    type: uuid
+    value: '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+  - name: hydrovalveXlen
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyA91160C
+        value: 0.057
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.0416
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.048
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.048
+      - conditions:
+          - hydrovalveID == hyAMP1115
+        value: 0.045
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.0576
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.098
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.175
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.0534
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.406
+  - name: hydrovalveYlen
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyA91160C
+        value: 0.17
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.147
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.147
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.124
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.17
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.144
+      - conditions:
+          - hydrovalveID == hyAMP1115
+        value: 0.185
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.157
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.165
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.0866
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.149
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.203
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.17
+  - name: hydrovalveZlen
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyA91160C
+        value: 0.2
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.174
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.174
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.107
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.24
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.122
+      - conditions:
+          - hydrovalveID == hyAMP1115
+        value: 0.201
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.17
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.242
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.111
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.174
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.204
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.201
+  - name: hydrovalveWall
+    type: number
+    value: 0.04
+  - name: hydrovalveX
+    type: number
+    value: 0
+  - name: hydrovalveY
+    type: number
+    value: 0
+  - name: hydrovalveZ
+    type: number
+    value: 0.33
+  - name: blockMainCabinetHeight
+    type: number
+    value: 0.825
+  - name: blockMirrorCabinetHeight
+    type: number
+    value: 0.686
+  - name: blockDistance
+    type: number
+    value: totalHeight - mainCabinetHeight - mirrorCabinetHeight
+  - name: blockFixed
+    type: number
+    value: 0.408
+  - name: blockBasePointZ
+    type: number
+    value: >-
+      mainCabinetGround + (blockMainCabinetHeight + blockMirrorCabinetHeight +
+      blockFixed) / 2
+  - name: blockHydrovalveHeight
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.16
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.14
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.124
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.17
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.143
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.18
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.173
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.173
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.171
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.253
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.128
+  - name: blockHydrovalvePlanY
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.043 + 0.06
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.045 + 0.06
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.036 + 0.06
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.057 + 0.06
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.04 + 0.06
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.047 + 0.06
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.058 + 0.06
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.045 + 0.06
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.049 + 0.06
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.074 + 0.06
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.05 + 0.06
+  - name: blockHydrovalveBasePointZ
+    type: number
+    value: mainCabinetGround + blockMainCabinetHeight + blockHydrovalveHeight / 2
+popup:
+  - widget: group
+    title: 主柜尺寸
+    items:
+      - title: 长度
+        type: length
+        value: mainCabinetLen
+        inputable: false
+        options:
+          - 1.08
+          - 1.18
+      - title: 宽度
+        type: length
+        value: mainCabinetWidth
+        inputable: false
+      - title: 高度
+        type: length
+        value: mainCabinetHeight
+        inputable: false
+      - title: 离地
+        type: length
+        value: mainCabinetGround
+      - title: 角度
+        type: angle
+        value: rotation.z
+        inputable: false
+  - widget: group
+    title: '"柜盆/台面尺寸"'
+    items:
+      - title: 长度
+        type: string
+        value: basinCountertopLen
+        inputable: false
+      - title: 宽度
+        type: string
+        value: basinCountertopWidth
+        inputable: false
+      - title: 高度
+        type: string
+        value: basinCountertopHeight
+        inputable: false
+  - widget: group
+    title: 镜柜尺寸
+    items:
+      - title: 长度
+        type: length
+        value: mirrorCabinetLen
+        inputable: false
+      - title: 宽度
+        type: length
+        value: mirrorCabinetWidth
+        inputable: false
+      - title: 高度
+        type: length
+        value: mirrorCabinetHeight
+        inputable: false
+  - type: component
+    title: 面盆龙头规格
+    value: hydrovalveID
+    options:
+      - '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+      - '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+      - '"64042589-1dad-133c-822c-7a965c1ea420"'
+      - '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+      - '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+      - '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+      - '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+      - '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+      - '"626a8e6f-70bf-4a88-9637-de696dada597"'
+      - '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+      - '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+      - '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+      - '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+components:
+  - id: bathroomID
+    position:
+      - 0
+      - 0
+      - totalHeight / 2 + mainCabinetGround
+    rotation:
+      - 0
+      - 0
+      - 0
+    length: totalLen
+    width: totalWidth
+    height: totalHeight
+  - id: hydrovalveID
+    position:
+      - '-hydrovalveX'
+      - totalWidth / 2 - hydrovalveWall - hydrovalveYlen / 2 + hydrovalveY
+      - mainCabinetGround + mainCabinetHeight + hydrovalveZlen / 2 + hydrovalveZ
+    rotation:
+      - 0
+      - 0
+      - 0
+item2Ds:
+  - type: polyline
+    color: '#0080FF'
+    fill: '#616130'
+    path:
+      - - totalLen/2
+        - totalWidth/2
+      - - totalLen/2
+        - '-totalWidth/2'
+      - - '-totalLen/2'
+        - '-totalWidth/2'
+      - - '-totalLen/2'
+        - totalWidth/2
+snappings:
+  active:
+    - type: corner
+      point:
+        - '-totalLen/2'
+        - totalWidth / 2
+        - 0
+      direction:
+        - -1
+        - 1
+        - 0
+      behaviors: null
+    - type: corner
+      point:
+        - totalLen/2
+        - totalWidth / 2
+        - 0
+      direction:
+        - 1
+        - 1
+        - 0
+      behaviors: null
+    - type: wall
+      point:
+        - 0
+        - totalWidth/2
+        - 0
+      direction:
+        - 0
+        - 1
+        - 0
+      behaviors: null
+dwgView:
+  name: bathCabinetName
+  baseVec:
+    - 0
+    - -1
+    - 0
+  detailDrawings: []
+  front:
+    modelSymbols:
+      - conditions:
+          - true
+        modelName: 正立面
+        isInConstructionDrawing: true
+        symbolName:
+          - conditions:
+              - mainCabinetLen == 1.08
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-100L'
+          - conditions:
+              - mainCabinetLen == 1.18
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-120L'
+        rotation: 0
+        boundary:
+          - - '-totalLen / 2'
+            - 0
+            - mainCabinetGround
+          - - '-totalLen / 2'
+            - 0
+            - mainCabinetGround + totalHeight
+          - - totalLen / 2
+            - 0
+            - mainCabinetGround + totalHeight
+          - - totalLen / 2
+            - 0
+            - mainCabinetGround
+        basePoint:
+          - 0
+          - 0
+          - blockBasePointZ
+        layer: '0'
+        zIndex: 60
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: number
+            name: distance1
+            value: blockDistance * 1000
+          - type: number
+            name: flip
+            value: 'xFlip ? 1: 0'
+      - conditions:
+          - true
+        modelName: 正立面
+        isInConstructionDrawing: true
+        symbolName:
+          - &ref_0
+            conditions:
+              - hydrovalveID == hyST1023CW
+            value: '金螳螂家4.0图块:龙头-严选尚高'
+          - &ref_1
+            conditions:
+              - hydrovalveID == hyF1A1010C
+            value: '金螳螂家4.0图块:龙头-严选法恩莎'
+          - &ref_2
+            conditions:
+              - hydrovalveID == hyK16027TB4CP
+            value: '金螳螂家4.0图块:龙头-舒适科勒'
+          - &ref_3
+            conditions:
+              - hydrovalveID == hyF1172217CP
+            value: '金螳螂家4.0图块:面盆龙头-舒适-贝朗'
+          - &ref_4
+            conditions:
+              - hydrovalveID == hy71160007
+            value: '金螳螂家4.0图块:面盆龙头-舒适-汉斯格雅'
+          - &ref_5
+            conditions:
+              - hydrovalveID == hyK37327T4CP
+            value: '金螳螂家4.0图块:龙头-品质标-科勒'
+          - &ref_6
+            conditions:
+              - hydrovalveID == hyF16061C2
+            value: '金螳螂家4.0图块:龙头-品质标-贝朗'
+          - &ref_7
+            conditions:
+              - hydrovalveID == hyK8670T4MCP
+            value: '金螳螂家4.0图块:龙头-品质高科勒'
+          - &ref_8
+            conditions:
+              - hydrovalveID == hy31080007
+            value: '金螳螂家4.0图块:龙头-品质高-汉斯格雅'
+          - &ref_9
+            conditions:
+              - hydrovalveID == hyK97347T4CP
+            value: '金螳螂家4.0图块:龙头-尊享科勒'
+          - &ref_10
+            conditions:
+              - hydrovalveID == hy31083007
+            value: '金螳螂家4.0图块:龙头-尊享高汉斯格雅'
+        rotation: 0
+        boundary:
+          - - '-hydrovalveXlen / 2'
+            - 0
+            - 0
+          - - '-hydrovalveXlen / 2'
+            - 0
+            - 0 + hydrovalveZlen
+          - - hydrovalveXlen / 2
+            - 0
+            - 0 + hydrovalveZlen
+          - - hydrovalveXlen / 2
+            - 0
+            - 0
+        basePoint:
+          - 0
+          - 0
+          - blockHydrovalveBasePointZ
+        layer: '0'
+        zIndex: 61
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: string
+            name: visibility
+            value:
+              - conditions:
+                  - hydrovalveID == hyST1023CW
+                value: 龙头-严选尚高L
+              - conditions:
+                  - hydrovalveID == hyF1A1010C
+                value: 龙头-严选法恩莎L
+              - conditions:
+                  - hydrovalveID == hyK16027TB4CP
+                value: 龙头-舒适科勒L
+              - conditions:
+                  - hydrovalveID == hyF1172217CP
+                value: 面盆龙头-舒适贝朗L
+              - conditions:
+                  - hydrovalveID == hy71160007
+                value: 面盆龙头-舒适汉斯格雅L
+              - conditions:
+                  - hydrovalveID == hyK37327T4CP
+                value: 龙头-品质科勒L
+              - conditions:
+                  - hydrovalveID == hyF16061C2
+                value: 龙头-品质贝朗L
+              - conditions:
+                  - hydrovalveID == hyK8670T4MCP
+                value: 龙头-品质高科勒L
+              - conditions:
+                  - hydrovalveID == hy31080007
+                value: 龙头-品质汉斯格雅L
+              - conditions:
+                  - hydrovalveID == hyK97347T4CP
+                value: 龙头-尊享科勒L
+              - conditions:
+                  - hydrovalveID == hy31083007
+                value: 龙头-尊享高汉斯格雅L
+          - type: number
+            name: flip1
+            value: 'xFlip ? 1: 0'
+    elements:
+      - isInConstructionDrawing: true
+        layer: '0'
+        preferDirections:
+          - up
+        isStraight: true
+        target:
+          type: point
+          data:
+            - 0
+            - 0
+            - mainCabinetGround + 0.2
+        marking:
+          type: symbol
+          data:
+            symbolName: 材料索引
+            values:
+              - name: 材料
+                data: J510556
+              - name: 编号
+                data:
+                  - conditions:
+                      - mainCabinetLen == 1.08
+                    value: '100'
+                  - conditions:
+                      - mainCabinetLen == 1.18
+                    value: '120'
+              - name: 描述
+                data: 浴室柜
+  left:
+    modelSymbols:
+      - conditions:
+          - true
+        modelName: 侧立面
+        isInConstructionDrawing: true
+        symbolName:
+          - conditions:
+              - mainCabinetLen == 1.08
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-100C'
+          - conditions:
+              - mainCabinetLen == 1.18
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-120C'
+        rotation: 0
+        boundary:
+          - - 0
+            - totalWidth/2
+            - mainCabinetGround
+          - - 0
+            - totalWidth/2
+            - mainCabinetGround + totalHeight
+          - - 0
+            - '-totalWidth/2'
+            - mainCabinetGround + totalHeight
+          - - 0
+            - '-totalWidth/2'
+            - mainCabinetGround
+        basePoint:
+          - 0
+          - 0
+          - blockBasePointZ
+        layer: '0'
+        zIndex: 60
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: number
+            name: distance1
+            value: blockDistance * 1000
+          - type: number
+            name: flip
+            value: 'xFlip ? 1: 0'
+      - conditions:
+          - true
+        modelName: 侧立面
+        isInConstructionDrawing: true
+        symbolName:
+          - *ref_0
+          - *ref_1
+          - *ref_2
+          - *ref_3
+          - *ref_4
+          - *ref_5
+          - *ref_6
+          - *ref_7
+          - *ref_8
+          - *ref_9
+          - *ref_10
+        rotation: 0
+        boundary:
+          - - 0
+            - hydrovalveYlen/2
+            - 0
+          - - 0
+            - hydrovalveYlen/2
+            - 0 + hydrovalveZlen
+          - - 0
+            - '-hydrovalveYlen/2'
+            - 0 + hydrovalveZlen
+          - - 0
+            - '-hydrovalveYlen/2'
+            - 0
+        basePoint:
+          - 0
+          - basinCountertopWidthB / 2 - blockHydrovalvePlanY
+          - blockHydrovalveBasePointZ
+        layer: '0'
+        zIndex: 61
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: string
+            name: visibility
+            value:
+              - &ref_11
+                conditions:
+                  - hydrovalveID == hyST1023CW
+                value: 龙头-严选尚高C
+              - &ref_12
+                conditions:
+                  - hydrovalveID == hyF1A1010C
+                value: 龙头-严选法恩莎C
+              - &ref_13
+                conditions:
+                  - hydrovalveID == hyK16027TB4CP
+                value: 龙头-舒适科勒C
+              - &ref_14
+                conditions:
+                  - hydrovalveID == hyF1172217CP
+                value: 面盆龙头-舒适贝朗C
+              - &ref_15
+                conditions:
+                  - hydrovalveID == hy71160007
+                value: 面盆龙头-舒适汉斯格雅C
+              - &ref_16
+                conditions:
+                  - hydrovalveID == hyK37327T4CP
+                value: 龙头-品质科勒C
+              - &ref_17
+                conditions:
+                  - hydrovalveID == hyF16061C2
+                value: 龙头-品质贝朗C
+              - &ref_18
+                conditions:
+                  - hydrovalveID == hyK8670T4MCP
+                value: 龙头-品质高科勒C
+              - &ref_19
+                conditions:
+                  - hydrovalveID == hy31080007
+                value: 龙头-品质汉斯格雅C
+              - &ref_20
+                conditions:
+                  - hydrovalveID == hyK97347T4CP
+                value: 龙头-尊享科勒C
+              - &ref_21
+                conditions:
+                  - hydrovalveID == hy31083007
+                value: 龙头-尊享高汉斯格雅C
+          - type: number
+            name: flip
+            value: 'xFlip ? 1: 0'
+  right:
+    modelSymbols:
+      - conditions:
+          - true
+        modelName: 侧立面
+        isInConstructionDrawing: true
+        symbolName:
+          - conditions:
+              - mainCabinetLen == 1.08
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-100C'
+          - conditions:
+              - mainCabinetLen == 1.18
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-120C'
+        rotation: 0
+        boundary:
+          - - 0
+            - totalWidth/2
+            - mainCabinetGround
+          - - 0
+            - totalWidth/2
+            - mainCabinetGround + totalHeight
+          - - 0
+            - '-totalWidth/2'
+            - mainCabinetGround + totalHeight
+          - - 0
+            - '-totalWidth/2'
+            - mainCabinetGround
+        basePoint:
+          - 0
+          - 0
+          - blockBasePointZ
+        layer: '0'
+        zIndex: 60
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: number
+            name: distance1
+            value: blockDistance * 1000
+          - type: number
+            name: flip
+            value: 'xFlip ? 0: 1'
+      - conditions:
+          - true
+        modelName: 侧立面
+        isInConstructionDrawing: true
+        symbolName:
+          - *ref_0
+          - *ref_1
+          - *ref_2
+          - *ref_3
+          - *ref_4
+          - *ref_5
+          - *ref_6
+          - *ref_7
+          - *ref_8
+          - *ref_9
+          - *ref_10
+        rotation: 0
+        boundary:
+          - - 0
+            - hydrovalveYlen/2
+            - 0
+          - - 0
+            - hydrovalveYlen/2
+            - 0 + hydrovalveZlen
+          - - 0
+            - '-hydrovalveYlen/2'
+            - 0 + hydrovalveZlen
+          - - 0
+            - '-hydrovalveYlen/2'
+            - 0
+        basePoint:
+          - 0
+          - basinCountertopWidthB / 2 - blockHydrovalvePlanY
+          - blockHydrovalveBasePointZ
+        layer: '0'
+        zIndex: 61
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: string
+            name: visibility
+            value:
+              - *ref_11
+              - *ref_12
+              - *ref_13
+              - *ref_14
+              - *ref_15
+              - *ref_16
+              - *ref_17
+              - *ref_18
+              - *ref_19
+              - *ref_20
+              - *ref_21
+          - type: number
+            name: flip
+            value: 'xFlip ? 0: 1'
+  top:
+    modelSymbols:
+      - conditions:
+          - true
+        modelName: 平面图
+        isInConstructionDrawing: true
+        symbolName:
+          - conditions:
+              - mainCabinetLen == 1.08
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-100P'
+          - conditions:
+              - mainCabinetLen == 1.18
+            value: '金螳螂家4.0图块:浴室柜-品质高J510556-120P'
+        rotation: rotation.z
+        boundary:
+          - - '-totalLen / 2'
+            - '-totalWidth / 2'
+            - 0
+          - - '-totalLen / 2'
+            - totalWidth / 2
+            - 0
+          - - totalLen / 2
+            - totalWidth / 2
+            - 0
+          - - totalLen / 2
+            - '-totalWidth / 2'
+            - 0
+        basePoint:
+          - 0
+          - 0
+          - 0
+        layer: sanitaryware_accessories
+        zIndex: 60
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: number
+            name: flip
+            value: 'xFlip ? 1: 0'
+      - conditions:
+          - true
+        modelName: 平面图
+        isInConstructionDrawing: true
+        symbolName:
+          - *ref_0
+          - *ref_1
+          - *ref_2
+          - *ref_3
+          - *ref_4
+          - *ref_5
+          - *ref_6
+          - *ref_7
+          - *ref_8
+          - *ref_9
+          - *ref_10
+        rotation: rotation.z
+        boundary:
+          - - '-hydrovalveXlen / 2'
+            - '-hydrovalveYlen / 2'
+            - 0
+          - - '-hydrovalveXlen / 2'
+            - hydrovalveYlen / 2
+            - 0
+          - - hydrovalveXlen / 2
+            - hydrovalveYlen / 2
+            - 0
+          - - hydrovalveXlen / 2
+            - '-hydrovalveYlen / 2'
+            - 0
+        basePoint:
+          - 0
+          - basinCountertopWidthB / 2 - blockHydrovalvePlanY
+          - 0
+        layer: sanitaryware_accessories
+        zIndex: 61
+        symbolWidth: -1
+        symbolHeight: -1
+        properties:
+          - type: string
+            name: visibility
+            value:
+              - conditions:
+                  - hydrovalveID == hyST1023CW
+                value: 龙头-严选尚高P
+              - conditions:
+                  - hydrovalveID == hyF1A1010C
+                value: 龙头-严选法恩莎P
+              - conditions:
+                  - hydrovalveID == hyK16027TB4CP
+                value: 龙头-舒适科勒P
+              - conditions:
+                  - hydrovalveID == hyF1172217CP
+                value: 面盆龙头-舒适贝朗P
+              - conditions:
+                  - hydrovalveID == hy71160007
+                value: 面盆龙头-舒适汉斯格雅P
+              - conditions:
+                  - hydrovalveID == hyK37327T4CP
+                value: 龙头-品质科勒P
+              - conditions:
+                  - hydrovalveID == hyF16061C2
+                value: 龙头-品质贝朗P
+              - conditions:
+                  - hydrovalveID == hyK8670T4MCP
+                value: 龙头-品质高科勒P
+              - conditions:
+                  - hydrovalveID == hy31080007
+                value: 龙头-品质汉斯格雅P
+              - conditions:
+                  - hydrovalveID == hyK97347T4CP
+                value: 龙头-尊享科勒P
+              - conditions:
+                  - hydrovalveID == hy31083007
+                value: 龙头-尊享高汉斯格雅P
+          - type: number
+            name: flip
+            value: 'xFlip ? 1: 0'
+    elements:
+      - isInConstructionDrawing: true
+        floorPlanName: layout_plan
+        layer: '0'
+        preferDirections:
+          - up
+        isStraight: true
+        target:
+          type: point
+          data:
+            - 0
+            - 0
+            - 0
+        marking:
+          type: text
+          data:
+            - 浴室柜

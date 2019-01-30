@@ -1,0 +1,158 @@
+name: 换模型
+popup:
+  - widget: group
+    title: 主柜尺寸
+    items:
+      - title: 长度
+        type: length
+        value: hydrovalveXlen
+  - type: component
+    title: 面盆龙头规格
+    value: hydrovalveID
+    options:
+      - '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+      - '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+      - '"64042589-1dad-133c-822c-7a965c1ea420"'
+      - '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+      - '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+      - '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+      - '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+      - '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+      - '"626a8e6f-70bf-4a88-9637-de696dada597"'
+      - '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+      - '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+      - '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+      - '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+variables:
+  - name: frmMd
+    type: uuid
+    value: 35ede606-fb73-4137-8916-28509561817a
+  - name: hydrovalveID
+    type: uuid
+    value: '''8aa94bf7-6ca0-49de-91a6-9de740fb3111'''
+  - name: hyA91160C
+    type: uuid
+    value: '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+  - name: hyST1023CW
+    type: uuid
+    value: '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+  - name: hyF1A1010C
+    type: uuid
+    value: '"64042589-1dad-133c-822c-7a965c1ea420"'
+  - name: hyK16027TB4CP
+    type: uuid
+    value: '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+  - name: hyF1172217CP
+    type: uuid
+    value: '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+  - name: hy71160007
+    type: uuid
+    value: '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+  - name: hyAMP1115
+    type: uuid
+    value: '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+  - name: hyK37327T4CP
+    type: uuid
+    value: '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+  - name: hyF16061C2
+    type: uuid
+    value: '"626a8e6f-70bf-4a88-9637-de696dada597"'
+  - name: hyK8670T4MCP
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hy31080007
+    type: uuid
+    value: '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+  - name: hyK97347T4CP
+    type: uuid
+    value: '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+  - name: hy31083007
+    type: uuid
+    value: '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+  - name: hyA91160C
+    type: uuid
+    value: '"8aa94bf7-6ca0-49de-91a6-9de740fb3111"'
+  - name: hyST1023CW
+    type: uuid
+    value: '"539a73e8-79a6-12bf-28c6-da80944ee47a"'
+  - name: hyF1A1010C
+    type: uuid
+    value: '"64042589-1dad-133c-822c-7a965c1ea420"'
+  - name: hyK16027TB4CP
+    type: uuid
+    value: '"f2b38a15-dcef-4281-8c3b-ddca6875c064"'
+  - name: hyF1172217CP
+    type: uuid
+    value: '"51fe1de6-1e9a-4f3e-bbeb-38b93ff9ac48"'
+  - name: hy71160007
+    type: uuid
+    value: '"845cc422-162b-4bda-9da8-749f6f6dd923"'
+  - name: hyAMP1115
+    type: uuid
+    value: '"6196f4b9-a050-4774-8eaa-f69a4f70a5a8"'
+  - name: hyK37327T4CP
+    type: uuid
+    value: '"aed147aa-b358-46e2-8289-e63f260a00f1"'
+  - name: hyF16061C2
+    type: uuid
+    value: '"626a8e6f-70bf-4a88-9637-de696dada597"'
+  - name: hyK8670T4MCP
+    type: uuid
+    value: '"d6f7fcf9-ddef-4121-b7c5-f6687109a968"'
+  - name: hy31080007
+    type: uuid
+    value: '"b8a12c76-a128-baa0-e8f4-a998fa97d660"'
+  - name: hyK97347T4CP
+    type: uuid
+    value: '"97da4237-cb56-48fe-bb4d-091c0c51dc3a"'
+  - name: hy31083007
+    type: uuid
+    value: '"3089f2a5-4c38-47c9-864e-334e499698a4"'
+  - name: hydrovalveXlen
+    type: number
+    value:
+      - conditions:
+          - hydrovalveID == hyA91160C
+        value: 0.057
+      - conditions:
+          - hydrovalveID == hyST1023CW
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hyF1A1010C
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hyK16027TB4CP
+        value: 0.0416
+      - conditions:
+          - hydrovalveID == hyF1172217CP
+        value: 0.048
+      - conditions:
+          - hydrovalveID == hy71160007
+        value: 0.048
+      - conditions:
+          - hydrovalveID == hyAMP1115
+        value: 0.045
+      - conditions:
+          - hydrovalveID == hyK37327T4CP
+        value: 0.0576
+      - conditions:
+          - hydrovalveID == hyF16061C2
+        value: 0.098
+      - conditions:
+          - hydrovalveID == hyK8670T4MCP
+        value: 0.175
+      - conditions:
+          - hydrovalveID == hy31080007
+        value: 0.0534
+      - conditions:
+          - hydrovalveID == hyK97347T4CP
+        value: 0.051
+      - conditions:
+          - hydrovalveID == hy31083007
+        value: 0.406
+components:
+  - id: hydrovalveID
+    position:
+      - 0
+      - 0
+      - 0
